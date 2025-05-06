@@ -16,31 +16,36 @@ body {
   background-color: #fff9f9; 
 }
 
+h1 {
+    font-size: 3.125rem;
+}
+
 /* Navigation & logo style */
 
-#logo-style {
-    float: left;
-    font-size: 3.8rem;
-    list-style-type: none;
-    margin: 25px;
-    line-height: 35px;
+.main-header {
+  display: flex;         
+  justify-content: space-between;  
+  align-items: center;     
+  padding: 1rem 2rem;     
+  background-color: #fff9f9; 
+  border-bottom: 1px solid #e8c4c4; 
 }
 
-#logo-style a {
-    text-decoration: none;
-    color: #8B008B;
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #b76e79; 
+  margin: 0; 
 }
 
-#nav-style {
-    float: right;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    list-style-type: none;
-    margin: 30px;
-    text-decoration: none;
-    line-height: 35px;
-    display: flex;
-    flex-direction: row;
+
+
+.main-nav ul {
+  display: flex;           
+  list-style: none;        
+  gap: 2rem;               
+  margin: 0;               
+  padding: 0;              
 }
 
 li {
@@ -48,18 +53,26 @@ li {
     padding: 10px 10px;
 }
 
-#nav-style a {
-    text-decoration: none;
-    color: inherit;
+.main-nav a {
+    font-family: var(--font-primary);
+  color: #5e2b2b;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-#nav-style a:hover {
-    background-color: #d9d9d9;
-    color: #1a1a1a;
+.main-nav a:hover {
+    color: #b76e79;
 }
 
-#logo-style a:hover {
-    background-color: #8B008B;
-    color: #1a1a1a;
-    border-radius: 30%;
+.main-nav li {
+  position: relative;
+}
+
+/* Footer styling for email subscription, address and social media icons */
+
+footer {
+    height: 150px;
+    text-align: center;
+    clear: both;
 }
